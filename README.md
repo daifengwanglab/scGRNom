@@ -16,7 +16,7 @@ The analysis is based on R 4.0. You will only need a standard computer with enou
 
 Users should install the following packages prior to using the scGRNom from an R terminal:
 ```{r}
-install.packages(c('glmnet', 'data.table', 'dplyr', 'parallel', 'doParallel', 'foreach', 'Seurat', 'Rmagic','GenomicRanges', 
+install.packages(c('glmnet', 'data.table', 'dplyr', 'parallel', 'doParallel', 'foreach', 'Seurat', 'Rmagic', 
                    'GenomicFeatures', 'GenomeInfoDb', 'IRanges','S4Vectors', 'biomaRt',   'MotifBreakR'))
 ```
 Besides, data from packages *BSgenome.Hsapiens.UCSC.hg19*, *TxDb.Hsapiens.UCSC.hg19.knownGene* and *JASPAR2018* are also used for our project. These packages can also be installed in Bioconductor.
@@ -25,7 +25,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install(c('BSgenome.Hsapiens.UCSC.hg19', 'TxDb.Hsapiens.UCSC.hg19.knownGene', 'JASPAR2018', 'GenomicInteractions', 
-                       ‘TFBSTools’, ‘motifmatchr’, 'ReactomePA', 'reactome.db'))
+                       'GenomicRanges','TFBSTools', 'motifmatchr', 'ReactomePA', 'reactome.db'))
 ```
 
 ## Functions in the scGRNom pipeline
