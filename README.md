@@ -185,7 +185,7 @@ head(open_chrom_regions)
     
 ```{r}
 # get links having the enhancers with high accessiblity
-df3 <- scGRNom_getNt(df = df2, gexpr = gexpr, open_chrom = chromatin_access_regions, extension_bps = 2000)
+df3 <- scGRNom_getNt(df = df2, gexpr = gexpr, open_chrom = open_chrom_regions, extension_bps = 2000)
 head(df3)
 ```
     ##        TG    TF               enhancer               promoter   TFbs        coef      mse   
