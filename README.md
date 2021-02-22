@@ -6,7 +6,7 @@
 Understanding gene regulatory mechanisms in varous human disesaes is still challenging, especially at the cell-type level. Recent single-cell multi-omics data enable studying cell-type gene regulatory networks (GRNs). For instance,  a bunch of algorithms have been developed to decipher cell-type GRNs from single-cell transcriptomic data [1]. As shown in the flowchart below, Here we introduce **scGRNom** - a new computational pipeline to integrate single cell multi-omics data including cell-type chromatin interactions, cell-type epigenomics and single cell transcriptomics to predict cell-type GRNs. The output networks link transcription factors, distal regulatory elements and target genes at the cell-type level. As a demo, we applied **scGRNom** to single cell data in the human brain (e.g., excitatory and inhibitory neurons, microglia, oligodendrocyte). In addition to predicting gene regulatory networks, the **scGRNom** pipeline is also able to identify cell-type disease genes and regulatory elements (e.g., enhancers, promoters) using the disesae associated SNPs (e.g., from GWAS) and cell-type GRN. Finally, **scGRNom** also works as a general purpose tool for predicting gene regulatory networks (e.g., at the bulk tissue level) from multi-omics and disease genes. 
 
 <p align="center">
-  <img width="600" src="https://github.com/daifengwanglab/scGRNom/blob/master/pipeline.png">
+  <img width="1200" src="https://github.com/daifengwanglab/scGRNom/blob/master/pipeline.png">
 </p>
 
 ## Hardward Requirements
