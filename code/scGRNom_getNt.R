@@ -114,7 +114,8 @@ scGRNom_getNt <- function(df, gexpr, df_gene_id = 'hgnc_symbol', gexpr_gene_id =
     df <- na.omit(df)
     }
     }
-    
+  
+    library(glmnet)
     tgs <- as.character(unique(df$gene))
     output_df = data.frame(TG = NULL,TF = NULL, coef = NULL, mse = NULL)
     set.seed(123)
