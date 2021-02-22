@@ -25,7 +25,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install(c('BSgenome.Hsapiens.UCSC.hg19', 'TxDb.Hsapiens.UCSC.hg19.knownGene', 'JASPAR2018', 'GenomicInteractions','MotifBreakR',
-                       'SNPlocs.Hsapiens.dbSNP142.GRCh37','GenomicRanges','TFBSTools', 'motifmatchr', 'ReactomePA', 'reactome.db'))
+                       'SNPlocs.Hsapiens.dbSNP142.GRCh37','GenomicRanges','TFBSTools', 'motifmatchr'))
 ```
 
 ## Functions in the scGRNom pipeline
