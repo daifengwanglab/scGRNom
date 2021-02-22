@@ -16,16 +16,15 @@ The analysis is based on R 4.0. You will only need a standard computer with enou
 
 Users should install the following packages prior to using the scGRNom from an R terminal:
 ```{r}
-install.packages(c('glmnet', 'data.table', 'dplyr', 'parallel', 'doParallel', 'foreach', 'Seurat', 'Rmagic', 
-                   'GenomicFeatures', 'GenomeInfoDb', 'IRanges','S4Vectors', 'biomaRt'))
+install.packages(c('glmnet', 'data.table', 'dplyr', 'parallel', 'doParallel', 'foreach', 'Seurat', 'Rmagic'))
 ```
 Besides, data from packages *BSgenome.Hsapiens.UCSC.hg19*, *TxDb.Hsapiens.UCSC.hg19.knownGene* , *SNPlocs.Hsapiens.dbSNP142.GRCh37* and *JASPAR2018* are also used for our project. These packages can also be installed in Bioconductor.
 ```{r}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c('BSgenome.Hsapiens.UCSC.hg19', 'TxDb.Hsapiens.UCSC.hg19.knownGene', 'JASPAR2018', 'GenomicInteractions','MotifBreakR',
-                       'SNPlocs.Hsapiens.dbSNP142.GRCh37','GenomicRanges','TFBSTools', 'motifmatchr'))
+BiocManager::install(c('BSgenome.Hsapiens.UCSC.hg19', 'TxDb.Hsapiens.UCSC.hg19.knownGene','JASPAR2018','GenomicInteractions','MotifBreakR','S4Vectors',
+                       'biomaRt','SNPlocs.Hsapiens.dbSNP142.GRCh37','GenomicRanges','TFBSTools','motifmatchr','GenomicFeatures','GenomeInfoDb','IRanges'))
 ```
 
 ## Functions in the scGRNom pipeline
