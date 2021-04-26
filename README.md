@@ -74,7 +74,7 @@ The function, scGRNom_getNt predicts the final gene regulatory network based on 
         
     * output: a data frame containing disease genes
     
-For identifying cell-type disease genes and regulatory elements (e.g., enhancers, promoters). This function’s input includes a cell-type gene regulatory network and a list of GWAS SNPs associated with a disease. The function uses an R package, GenomicRanges [8], to overlap these disease SNPs with the enhancers and promoters of the input cell-type gene regulatory network, and then find the ones that interrupt the binding sites of  regulatory TFs (TFBSs) on the enhancers and promoters by motifbreakR[9]. It finally maps the overlapped enhancers or promoters and TFs with interrupted TFBSs onto the input network to find the linked genes and enhancers/promoters as the output cell-type disease genes and regulatory elements.
+For identifying cell-type disease genes and regulatory elements (e.g., enhancers, promoters), this function’s input includes a cell-type gene regulatory network and a list of GWAS SNPs associated with a disease. The function uses an R package, GenomicRanges [8], to overlap these disease SNPs with the enhancers and promoters of the input cell-type gene regulatory network, and then find the ones that interrupt the binding sites of  regulatory TFs (TFBSs) on the enhancers and promoters by motifbreakR[9]. It finally maps the overlapped enhancers or promoters and TFs with interrupted TFBSs onto the input network to find the linked genes and enhancers/promoters as the output cell-type disease genes and regulatory elements.
     
     
 ## Demo
