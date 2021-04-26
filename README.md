@@ -79,7 +79,7 @@ For identifying cell-type disease genes and regulatory elements (e.g., enhancers
     
 ## Demo
 
-This demo applies **scGRNom** to predict the gene regulatory network from single cell multi-omics for microglia, an important cell type in the brains. In particular, the microglia's chromatin interactome data and enhancers data are available in [10]. The single-cell gene expression data (UMI) including microglial cells is *DER-22_Single_cell_expression_raw_UMI* at http://resource.psychencode.org/ [11].
+This demo applies **scGRNom** to predict the gene regulatory network from single cell multi-omics for microglia, an important cell type in the brains. In particular, the microglia's chromatin interactome data and enhancers data are available in [10]. The single-cell gene expression data (UMI) including microglia cells is *DER-22_Single_cell_expression_raw_UMI* at http://resource.psychencode.org/ [11].
 
 **Step 0: data preprocessing**
 
@@ -198,7 +198,7 @@ head(df3)
     
 **Step 4: Identify cell-type disease genes and regulatory elements from cell-type GRN and disease-associated SNPs**
 
-Last, using the microglial gene regulatory network from Step 3 and the SNPs associated with Alzheimer’s Disease (AD) from the AD GWAS summary statistics [13] (p<5e-5, MAF>0.01), we identify the microglial AD genes. 
+Last, using the microglia gene regulatory network from Step 3 and the SNPs associated with Alzheimer’s Disease (AD) from the AD GWAS summary statistics [13] (p<5e-5, MAF>0.01), we identify the microglia AD genes. 
 
 ```{r}
 ad_gwas <- data.frame(read.table("ad_gwas.txt"))[,c('CHR', 'BP', 'SNP')]
