@@ -114,7 +114,7 @@ gexpr <- gexpr_imputed$result[grep('Micro',rownames(gexpr_imputed$result)),]
 # For each cell type, remove the lowly expressed genes with log10(sum of imputed gene expression levels of the cells of the cell type+1) < 1.
 gexpr <- t(gexpr[,log10(colSums(gexpr)+1)> 1])
 ```
-The processed gene expression data for microglia is uploaed in the data folder.
+The processed gene expression data for microglia is uploaded in the data folder.
 
 **Step 1: Find chromatin interactions between enhancers and promoters**
 
