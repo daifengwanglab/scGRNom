@@ -9,7 +9,7 @@ Understanding gene regulatory mechanisms in various human diseases is still chal
   <img width="1500" src="https://github.com/daifengwanglab/scGRNom/blob/master/pipeline.png">
 </p>
 
-## Hardward Requirements
+## Hardware Requirements
 
 The analysis is based on R 4.0. You will only need a standard computer with enough RAM to support the operations. For predicting gene regulatory networks, a *Linux* system with 32 GB RAM and 32GB storage would be enough to support.
 
