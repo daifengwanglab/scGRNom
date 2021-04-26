@@ -81,7 +81,7 @@ For identifying cell-type disease genes and regulatory elements (e.g., enhancers
 
 This demo applies **scGRNom** to predict the gene regulatory network from single cell multi-omics for microglia, an important cell type in the brains. In particular, the microglia's chromatin interactome data and enhancers data are available in [10]. The single-cell gene expression data (UMI) including microglial cells is *DER-22_Single_cell_expression_raw_UMI* at http://resource.psychencode.org/ [11].
 
-**Step 0: data preprocesssing**
+**Step 0: data preprocessing**
 
 ```{r}
 library(readxl)
