@@ -165,7 +165,7 @@ head(df3)
 
 **Step 3 (optional): Predict TF-target genes with high expression relationships by Elastic net regression**
 
-We input the open chromatin regions for microglia by scATAC-seq in [12] to predict the microglial network that only consiste of edges linking high accessible enhancers in microglia. 
+We input the open chromatin regions for microglia by scATAC-seq in [12] to predict the microglial network that only consists of edges linking high accessible enhancers in microglia. 
 
 ```{r}
 library(readxl)
@@ -198,7 +198,7 @@ head(df3)
     
 **Step 4: Identify cell-type disease genes and regulatory elements from cell-type GRN and disease associated SNPs**
 
-Last, using microglial gene regulaotry network from Step 3 and the SNPs associated with Alzheimer’s Disease (AD) from the AD GWAS summary statistics [13] (p<5e-5, MAF>0.01), we identify the microglial AD genes. 
+Last, using microglial gene regulatory network from Step 3 and the SNPs associated with Alzheimer’s Disease (AD) from the AD GWAS summary statistics [13] (p<5e-5, MAF>0.01), we identify the microglial AD genes. 
 
 ```{r}
 ad_gwas <- data.frame(read.table("ad_gwas.txt"))[,c('CHR', 'BP', 'SNP')]
