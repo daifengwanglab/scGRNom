@@ -149,7 +149,7 @@ head(df2,1)
     
 **Step 3: Predict TF-target genes with high expression relationships by Elastic net regression**  
 
-We input the microglial gene expression data from Step 0 to predict the microglial gene regulatory network that links TFs to target genes (TGs) via enhancers and/or promoters. 
+We input the microglia gene expression data from Step 0 to predict the microglia gene regulatory network that links TFs to target genes (TGs) via enhancers and/or promoters. 
 
 ```{r}
 df3 <- scGRNom_getNt(df = df2, gexpr = gexpr)
@@ -165,7 +165,7 @@ head(df3)
 
 **Step 3 (optional): Predict TF-target genes with high expression relationships by Elastic net regression**
 
-We input the open chromatin regions for microglia by scATAC-seq in [12] to predict the microglial network that only consists of edges linking high accessible enhancers in microglia. 
+We input the open chromatin regions for microglia by scATAC-seq in [12] to predict the microglia network that only consists of edges linking high accessible enhancers in microglia. 
 
 ```{r}
 library(readxl)
