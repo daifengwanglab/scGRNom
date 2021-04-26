@@ -196,9 +196,9 @@ head(df3)
     ## TMEM170B CEBPB chr6:11212580-11213758 chr6:11535960-11540960 enhancer -0.09745105 0.0002148594 
     ## TMEM170B CLOCK chr6:11212580-11213758 chr6:11535960-11540960 enhancer -0.05542389 0.0002148594 
     
-**Step 4: Identify cell-type disease genes and regulatory elements from cell-type GRN and disease associated SNPs**
+**Step 4: Identify cell-type disease genes and regulatory elements from cell-type GRN and disease-associated SNPs**
 
-Last, using microglial gene regulatory network from Step 3 and the SNPs associated with Alzheimer’s Disease (AD) from the AD GWAS summary statistics [13] (p<5e-5, MAF>0.01), we identify the microglial AD genes. 
+Last, using the microglial gene regulatory network from Step 3 and the SNPs associated with Alzheimer’s Disease (AD) from the AD GWAS summary statistics [13] (p<5e-5, MAF>0.01), we identify the microglial AD genes. 
 
 ```{r}
 ad_gwas <- data.frame(read.table("ad_gwas.txt"))[,c('CHR', 'BP', 'SNP')]
