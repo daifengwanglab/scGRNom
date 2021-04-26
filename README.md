@@ -184,7 +184,7 @@ head(open_chrom_regions)
     ## 5 chr1               1259974   1260175
     
 ```{r}
-# get links having the enhancers with high accessiblity
+# get links having the enhancers with high accessibility
 df3 <- scGRNom_getNt(df = df2, gexpr = gexpr, open_chrom = open_chrom_regions, extension_bps = 2000)
 head(df3)
 ```
