@@ -136,7 +136,7 @@ head(df1[sample(nrow(df1),20),])
 
 **Step 2: Infer the transcription factor binding sites (TFBSs) on interacting enhancers and promoters**
 
-We futher infer the TFBSs on the interacting enhancers and promoters from Step 1.
+We further infer the TFBSs on the interacting enhancers and promoters from Step 1.
 
 ```{r}
 df2 <- scGRNom_getTF(df1)
