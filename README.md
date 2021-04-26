@@ -171,7 +171,7 @@ We input the open chromatin regions for microglia by scATAC-seq in [12] to predi
 library(readxl)
 chromatin_access_regions <- read_xlsx("open_chromatin_regions.xlsx", sheet = 'Feature Binarization Peaks',skip = 16)
 
-# Select chromation accessible regions of microglia
+# Select chromatin accessible regions of microglia
 open_chrom_regions <- chromatin_access_regions[which(chromatin_access_regions$Microglia == 1),]
 open_chrom_regions <- data.frame(na.omit(open_chrom_regions[,c('hg38_Chromosome', 'hg38_Start', 'hg38_Stop')]))
 head(open_chrom_regions)
